@@ -19,7 +19,10 @@
       "@sandbox/api/core": ["libs/api/core/src/index.ts"],
       "@sandbox/api/data": ["libs/api/data/src/index.ts"],
       "@sandbox/api/auth": ["libs/api/auth/src/index.ts"],
-      "@sandbox/api/project": ["libs/api/project/src/index.ts"]
+      "@sandbox/api/project": ["libs/api/project/src/index.ts"],
+      "@sandbox/admin/data": ["libs/admin/data/src/index.ts"],
+      "@sandbox/admin/ui": ["libs/admin/ui/src/index.ts"],
+      "@sandbox/admin/project": ["libs/admin/project/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

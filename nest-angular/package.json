@@ -23,7 +23,8 @@
     "update": "nx migrate latest",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "postinstall": "ngcc --properties es2015 browser module main --first-only --create-ivy-entry-points"
   },
   "private": true,
   "dependencies": {
@@ -31,11 +32,21 @@
     "@nestjs/core": "^6.8.3",
     "@nestjs/platform-express": "^6.8.3",
     "reflect-metadata": "^0.1.13",
-    "rxjs": "^6.5.5"
+    "rxjs": "^6.5.5",
+    "@angular/animations": "^9.1.0",
+    "@angular/common": "^9.1.0",
+    "@angular/compiler": "^9.1.0",
+    "@angular/core": "^9.1.0",
+    "@angular/forms": "^9.1.0",
+    "@angular/platform-browser": "^9.1.0",
+    "@angular/platform-browser-dynamic": "^9.1.0",
+    "@angular/router": "^9.1.0",
+    "zone.js": "^0.10.2"
   },
   "devDependencies": {
     "@nestjs/schematics": "^6.7.0",
     "@nestjs/testing": "^6.8.3",
+    "@nrwl/angular": "^9.4.0",
     "@nrwl/eslint-plugin-nx": "9.4.0",
     "@nrwl/jest": "9.4.0",
     "@nrwl/nest": "^9.4.0",
@@ -54,6 +65,13 @@
     "ts-jest": "25.2.1",
     "ts-node": "~7.0.0",
     "tslint": "~6.0.0",
-    "typescript": "~3.8.3"
+    "typescript": "~3.8.3",
+    "@angular/compiler-cli": "^9.1.0",
+    "@angular/language-service": "^9.1.0",
+    "@angular-devkit/build-angular": "0.901.0",
+    "codelyzer": "~5.0.1",
+    "jest-preset-angular": "8.1.2",
+    "cypress": "^4.1.0",
+    "@nrwl/cypress": "9.4.0"
   }
 }
