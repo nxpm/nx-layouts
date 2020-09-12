@@ -81,6 +81,33 @@
           }
         }
       }
+    },
+    "api-e2e": {
+      "root": "apps/api-e2e",
+      "sourceRoot": "apps/api-e2e/src",
+      "projectType": "application",
+      "prefix": "api-e2e",
+      "schematics": {},
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/api-e2e/jest.config.js",
+            "passWithNoTests": true
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "apps/api-e2e/tsconfig.app.json",
+              "apps/api-e2e/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/api-e2e/**/*"]
+          }
+        }
+      }
     }
   },
   "cli": {
