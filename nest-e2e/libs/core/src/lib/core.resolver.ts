@@ -1,8 +1,8 @@
-import { Int, Query, Resolver } from '@nestjs/graphql';
+import { Float, Query, Resolver } from '@nestjs/graphql';
 
 @Resolver()
 export class CoreResolver {
-  @Query(() => Int, { nullable: true })
+  @Query(() => Float, { nullable: true })
   uptime() {
     return process.uptime();
   }
