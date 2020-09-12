@@ -100,10 +100,7 @@
           "builder": "@nrwl/linter:lint",
           "options": {
             "linter": "eslint",
-            "tsConfig": [
-              "apps/api-e2e/tsconfig.app.json",
-              "apps/api-e2e/tsconfig.spec.json"
-            ],
+            "tsConfig": ["apps/api-e2e/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!apps/api-e2e/**/*"]
           }
         }
